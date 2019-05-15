@@ -623,7 +623,7 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
                                            moveit_msgs::MoveItErrorCodes &error_code,
                                            const kinematics::KinematicsQueryOptions &options) const
 {
-  const IKCallbackFn solution_callback = 0;
+  const IKCallbackFn solution_callback = 0; 
   std::vector<double> consistency_limits;
 
   return searchPositionIK(ik_pose,
@@ -644,7 +644,7 @@ bool IKFastKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose
                                            moveit_msgs::MoveItErrorCodes &error_code,
                                            const kinematics::KinematicsQueryOptions &options) const
 {
-  const IKCallbackFn solution_callback = 0;
+  const IKCallbackFn solution_callback = 0; 
   return searchPositionIK(ik_pose,
                           ik_seed_state,
                           timeout,
@@ -857,7 +857,7 @@ bool IKFastKinematicsPlugin::getPositionIK(const geometry_msgs::Pose &ik_pose,
 
   if(!active_)
   {
-    ROS_ERROR("kinematics not active");
+    ROS_ERROR("kinematics not active");    
     return false;
   }
 
